@@ -1,5 +1,6 @@
 package thread;
 
+import java.text.DateFormat;
 import java.util.concurrent.Exchanger;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -8,6 +9,7 @@ import java.util.concurrent.Executors;
  * Created by mortli on 12/20/16.
  */
 public class UtilConcurrent {
+
 
         public static void main(String[] args)
         {
@@ -19,6 +21,10 @@ public class UtilConcurrent {
                 {
                     try
                     {
+                        String dateString = "2012-12-06 ";
+                        DateFormat dateFormat = SafeDataFormate.getDateFormatByPattern(DatePatternEnum.DatePattern);
+                        System.out.println(dateFormat.parse(dateString));
+
                         String data1 = "零食";
                         System.out.println("线程" + Thread.currentThread().getName() + "正在把数据" + data1 + "换出去");
                         Thread.sleep((long) (Math.random() * 1000));
@@ -37,6 +43,10 @@ public class UtilConcurrent {
                 {
                     try
                     {
+                        String dateString = "2012-12-06 ";
+                        DateFormat dateFormat = SafeDataFormate.getDateFormatByPattern(DatePatternEnum.DatePattern);
+                        System.out.println(dateFormat.parse(dateString));
+
                         String data1 = "钱";
                         System.out.println("线程" + Thread.currentThread().getName() + "正在把数据" + data1 + "换出去");
                         Thread.sleep((long) (Math.random() * 1000));

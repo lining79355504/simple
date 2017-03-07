@@ -6,6 +6,7 @@ public class Test {
 
     public static void main(String[] args) {
 
+        String b = new String("12");
         Object a = null;
 
         if(a!=null && a.equals("1") ){     //&&  机制 从前往后执行 只要有一个出现错误就不执行后面的
