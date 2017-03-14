@@ -17,28 +17,14 @@ public class FindSum {
 
         System.out.println(Arrays.toString(a));
 
-        findSum(a , sum);
+        findSum(a ,0 , sum);
     }
 
-    public void findSum(int [] a , int sum ){
+    public void findSum(int [] a ,int curson, int sum ){
 
         for (int i = 0 ; i < a.length ; i++){
 
-            int left = i ;
-            int right = i ;
-            int tmp = 0 ;
-
-            int[] ret = new  int[20] ;
-
-            while(right < a.length){
-                tmp += a[right];
-                ret[right] = a[right];
-                if(tmp == sum ){
-
-                    System.out.println(Arrays.toString(ret));
-                }
-                right ++ ;
-            }
+            //findSum(tmp , curson+1 , tmp.length);
 
         }
 
