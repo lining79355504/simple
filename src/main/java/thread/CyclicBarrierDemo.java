@@ -19,7 +19,7 @@ public class CyclicBarrierDemo {
         });
 
         for (int i = 0; i < 6; i++) {     //  此处 线程数和 CyclicBarrier 数量不同的区别
-            new Write(barrier).start();
+            new Write(barrier).start();   // cyclicBarrier await 调用一次 加1  可以设置过期时间 即使未满足线程的barrier 条件 也会继续执行
         }
 
     }
