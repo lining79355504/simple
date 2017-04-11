@@ -27,6 +27,12 @@ public class xStreamTest {
         UUID.randomUUID().toString().intern();   //String 不变类 新建的String 会直接复制值给新的String  放在永久区
 
     }
+
+    public static void whileKiller( int offset ,int maxLoop){
+
+
+
+    }
 }
 
 
