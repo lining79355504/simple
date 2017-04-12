@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a94a63a-c0d1-4410-84bf-39c12411137d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/reentrantLock/readWriteLock/PrieceInfo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/reentrantLock/readWriteLock/ReadJob.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/reentrantLock/readWriteLock/WriteJob.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/xStreamTest.class" afterPath="$PROJECT_DIR$/target/classes/xStreamTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/reentrantLock/Job.java" afterPath="$PROJECT_DIR$/src/main/java/reentrantLock/Job.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/reentrantLock/PrintQueue.java" afterPath="$PROJECT_DIR$/src/main/java/reentrantLock/PrintQueue.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/reentrantLock/readWriteLock/ReadJob.java" afterPath="$PROJECT_DIR$/src/main/java/reentrantLock/readWriteLock/ReadJob.java" />
     </list>
     <ignored path="ygcTes.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -86,11 +80,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PrieceInfo.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PrieceInfo.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/reentrantLock/readWriteLock/PrieceInfo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+            <state relative-caret-position="240">
+              <caret line="46" column="43" selection-start-line="46" selection-start-column="43" selection-end-line="46" selection-end-column="43" />
               <folding>
                 <element signature="e#345#346#0" expanded="true" />
                 <element signature="e#410#411#0" expanded="true" />
@@ -99,14 +93,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ReadJob.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ReadJob.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/reentrantLock/readWriteLock/ReadJob.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+            <state relative-caret-position="195">
+              <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
               <folding>
-                <element signature="e#235#236#0" expanded="true" />
-                <element signature="e#279#280#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#294#295#0" expanded="true" />
+                <element signature="e#338#339#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -115,7 +110,7 @@
       <file leaf-file-name="WriteJob.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/reentrantLock/readWriteLock/WriteJob.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
+            <state relative-caret-position="240">
               <caret line="35" column="62" selection-start-line="35" selection-start-column="52" selection-end-line="35" selection-end-column="62" />
               <folding>
                 <element signature="e#203#204#0" expanded="true" />
@@ -221,9 +216,9 @@
         <option value="$PROJECT_DIR$/src/main/java/reentrantLock/PrintQueue.java" />
         <option value="$PROJECT_DIR$/src/main/java/reentrantLock/Job.java" />
         <option value="$PROJECT_DIR$/src/main/java/reentrantLock/readWriteLock/Job.java" />
+        <option value="$PROJECT_DIR$/src/main/java/reentrantLock/readWriteLock/WriteJob.java" />
         <option value="$PROJECT_DIR$/src/main/java/reentrantLock/readWriteLock/ReadJob.java" />
         <option value="$PROJECT_DIR$/src/main/java/reentrantLock/readWriteLock/PrieceInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/reentrantLock/readWriteLock/WriteJob.java" />
       </list>
     </option>
   </component>
@@ -1366,7 +1361,7 @@
       <workItem from="1490770981495" duration="12454000" />
       <workItem from="1491295878499" duration="597000" />
       <workItem from="1491318974614" duration="634000" />
-      <workItem from="1491794510294" duration="11313000" />
+      <workItem from="1491794510294" duration="13915000" />
     </task>
     <servers />
   </component>
@@ -1403,7 +1398,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="165419000" />
+    <option name="totallyTimeSpent" value="168021000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1415,7 +1410,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="731" extended-state="6" />
+    <frame x="0" y="23" width="1280" height="731" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1426,7 +1421,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20597738" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5101721" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3317684" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286385" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Execute Anonymous" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286385" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27230048" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1878,20 +1873,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/reentrantLock/readWriteLock/PrieceInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
-          <folding>
-            <element signature="e#345#346#0" expanded="true" />
-            <element signature="e#410#411#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/reentrantLock/readWriteLock/WriteJob.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
+        <state relative-caret-position="240">
           <caret line="35" column="62" selection-start-line="35" selection-start-column="52" selection-end-line="35" selection-end-column="62" />
           <folding>
             <element signature="e#203#204#0" expanded="true" />
@@ -1902,11 +1886,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/reentrantLock/readWriteLock/ReadJob.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+        <state relative-caret-position="195">
+          <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
           <folding>
-            <element signature="e#235#236#0" expanded="true" />
-            <element signature="e#279#280#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#294#295#0" expanded="true" />
+            <element signature="e#338#339#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/reentrantLock/readWriteLock/PrieceInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="46" column="43" selection-start-line="46" selection-start-column="43" selection-end-line="46" selection-end-column="43" />
+          <folding>
+            <element signature="e#345#346#0" expanded="true" />
+            <element signature="e#410#411#0" expanded="true" />
           </folding>
         </state>
       </provider>
