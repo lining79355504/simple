@@ -26,6 +26,8 @@ public class ReadJob implements Runnable {
         System.out.println(" read a " +Thread.currentThread().getName()+"  "+  prieceInfo.getPrieceA());
 
         System.out.println(" read b " +Thread.currentThread().getName()+"   " + prieceInfo.getPrieceB());
+
+        prieceInfo.readWriteLock.readLock().unlock();
 //        readWriteLock.readLock().unlock();
 
     }

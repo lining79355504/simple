@@ -37,8 +37,11 @@ public class WriteJob implements Runnable {
         }
         for (int i = 0; i < 10; i++) {
             readThreads[i].start();
+            if(4== i){
+                writeThread.start();
+            }
         }
-        writeThread.start();
+
 
     }
 }

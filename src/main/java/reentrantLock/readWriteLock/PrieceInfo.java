@@ -7,7 +7,7 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
  */
 public class PrieceInfo {
 
-    private ReentrantReadWriteLock readWriteLock; // =  new ReentrantReadWriteLock();
+    public ReentrantReadWriteLock readWriteLock; // =  new ReentrantReadWriteLock();
 
     public double prieceA = 0.01;
 
@@ -17,24 +17,34 @@ public class PrieceInfo {
         this.readWriteLock = new ReentrantReadWriteLock();
     }
 
+
+    /**
+     *    getA 或者getB 的读锁 会被 写锁抢占到 ， 写锁释放后 会还给上一个被抢占的持有锁者,  返回的是上一个锁持有者 之前的线程缓存值
+     *    不是volatile 硬件级别保证可见形  会主动刷新CPU高速缓存 另所有线程缓存失效 主动从内存获取最新变量
+     *
+     *
+     *
+     * */
     public double getPrieceA() {
 
         readWriteLock.readLock().lock();
-        double value = prieceA;
-        readWriteLock.readLock().unlock();
-
-        return value;
+        System.out.println(Thread.currentThread().getName()+" read A start" );
+        return this.prieceA;
+//        System.out.println(Thread.currentThread().getName()+" read A end" );
+//        readWriteLock.readLock().unlock();
 
     }
 
 
     public double getPrieceB() {
 
-        readWriteLock.readLock().lock();
-        double value = prieceB;
-        readWriteLock.readLock().unlock();
-
-        return value;
+//        readWriteLock.readLock().lock();
+        System.out.println(Thread.currentThread().getName()+" read B start" );
+        return this.prieceB;
+//        System.out.println(Thread.currentThread().getName()+" read B end" );
+//        readWriteLock.readLock().unlock();
+//
+//        return value;
 
     }
 
