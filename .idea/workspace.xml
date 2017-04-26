@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a94a63a-c0d1-4410-84bf-39c12411137d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/thread/AsyncThread$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/thread/AsyncThread$2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/thread/AsyncThread.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/thread/TestCallable$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/thread/TestCallable.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/thread/AsyncThread.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/thread/TestCallable.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/thread/FutureTaskDemo.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/thread/FutureTaskDemo.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ygcTes.iml" afterPath="$PROJECT_DIR$/ygcTes.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/thread/TestCallable.java" afterPath="$PROJECT_DIR$/src/main/java/thread/TestCallable.java" />
     </list>
     <ignored path="ygcTes.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -108,10 +96,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AsyncThread.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AsyncThread.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/thread/AsyncThread.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
+            <state relative-caret-position="831">
               <caret line="103" column="51" lean-forward="true" selection-start-line="103" selection-start-column="51" selection-end-line="103" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -121,11 +109,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestCallable.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TestCallable.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/thread/TestCallable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="39" column="39" lean-forward="false" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
+            <state relative-caret-position="176">
+              <caret line="53" column="58" lean-forward="true" selection-start-line="53" selection-start-column="58" selection-end-line="53" selection-end-column="58" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1119#1128#0" expanded="true" />
@@ -239,8 +227,8 @@
         <option value="$PROJECT_DIR$/src/main/java/reentrantLock/readWriteLock/ReadJob.java" />
         <option value="$PROJECT_DIR$/src/main/java/reentrantLock/readWriteLock/PrieceInfo.java" />
         <option value="$PROJECT_DIR$/src/main/java/thread/FutureTaskDemo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/thread/TestCallable.java" />
         <option value="$PROJECT_DIR$/src/main/java/thread/AsyncThread.java" />
+        <option value="$PROJECT_DIR$/src/main/java/thread/TestCallable.java" />
       </list>
     </option>
   </component>
@@ -455,7 +443,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.AsyncThread">
+  <component name="RunManager" selected="Application.TestCallable">
     <configuration default="false" name="ParalleStream" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -986,8 +974,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.AsyncThread" />
-        <item index="1" class="java.lang.String" itemvalue="Application.TestCallable" />
+        <item index="0" class="java.lang.String" itemvalue="Application.TestCallable" />
+        <item index="1" class="java.lang.String" itemvalue="Application.AsyncThread" />
         <item index="2" class="java.lang.String" itemvalue="Application.ParalleStream" />
         <item index="3" class="java.lang.String" itemvalue="Application.WriteJob" />
         <item index="4" class="java.lang.String" itemvalue="Application.PrintQueue" />
@@ -1077,7 +1065,7 @@
       <workItem from="1491318974614" duration="634000" />
       <workItem from="1491794510294" duration="15749000" />
       <workItem from="1493171967874" duration="113000" />
-      <workItem from="1493195632979" duration="1562000" />
+      <workItem from="1493195632979" duration="1815000" />
     </task>
     <servers />
   </component>
@@ -1114,7 +1102,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="171530000" />
+    <option name="totallyTimeSpent" value="171783000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1138,10 +1126,10 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.08798283" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30506155" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30369356" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286385" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27222982" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27222982" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2274678" sideWeight="0.4945227" order="0" side_tool="false" content_ui="combo" />
@@ -1482,24 +1470,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/thread/TestCallable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="39" column="39" lean-forward="false" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1119#1128#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/thread/AsyncThread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
+        <state relative-caret-position="831">
           <caret line="103" column="51" lean-forward="true" selection-start-line="103" selection-start-column="51" selection-end-line="103" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#515#531#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/thread/TestCallable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="53" column="58" lean-forward="true" selection-start-line="53" selection-start-column="58" selection-end-line="53" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1119#1128#0" expanded="true" />
           </folding>
         </state>
       </provider>

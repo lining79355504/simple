@@ -44,7 +44,7 @@ public class TestCallable {
             temp = completionService.take().get();
             sum += temp;
             System.out.print(temp + "\t");
-        }
+        }   //  一个一个 获取执行完的任务  不等全部执行完 异步
         System.out.println("CompletionService all is : " + sum);
         executorService.shutdown();
     }
