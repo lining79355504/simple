@@ -8,7 +8,25 @@ import java.math.BigDecimal;
 public class Test {
 
 
+    static String b_a = new String("112312312");
+    static int a_a = 0 ;
+
+
     public static void main(String[] args) {
+
+
+
+
+
+
+
+        TestA testA = new TestA(a_a);
+        TestB testB = new TestB(b_a);
+        testB.changeB();
+        testA.changeB();
+        System.out.println("a_a is " + a_a );
+        System.out.println("b_a is " + b_a );
+
 
         String b = new String("12");
         Object a = null;
