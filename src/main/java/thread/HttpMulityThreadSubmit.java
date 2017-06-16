@@ -1,6 +1,8 @@
 package thread;
 
 import http.HttpRequest;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,6 +13,7 @@ import java.util.concurrent.*;
  */
 public class HttpMulityThreadSubmit {
 
+    Logger logger = LoggerFactory.getLogger(HttpMulityThreadSubmit.class);
     /*
     *  打开Tomcat Nginx 最大连接配置
     *
@@ -24,12 +27,17 @@ public class HttpMulityThreadSubmit {
     *
     *
     *
+    * 最佳实践本机线程spring redis 查询 整体最优 并发 100 左右
+     *
+     * 并发大了redis 出现卡顿 connected_clients连接数减少  instantaneous_ops_per_sec减少  待查原因
+    *
     * */
-    private static int count = 2000;
+    private static int count = 100;
 
 
     public static void main(String[] args) {
 
+        Long  start = System.currentTimeMillis();
         List<Future<String>> taskRetList = new ArrayList<>();
 
         BlockingQueue taskRetQueue = new LinkedBlockingQueue();
@@ -37,7 +45,7 @@ public class HttpMulityThreadSubmit {
         ConcurrentHashMap taskRetHaspMap = new ConcurrentHashMap<>();
 
         //ExecutorService cacheThreadPool = Executors.newCachedThreadPool();
-        ExecutorService fixedThreadPool = Executors.newFixedThreadPool(2200);
+        ExecutorService fixedThreadPool = Executors.newFixedThreadPool(100);
 
        final ThreadLocal<HttpRequest> httpRequestThreadLocal = new ThreadLocal<HttpRequest>(){
             @Override
@@ -47,7 +55,7 @@ public class HttpMulityThreadSubmit {
 
         };
 
-        HttpBenchMarkFutureTask httpBenchMarkFutureTask = new HttpBenchMarkFutureTask(httpRequestThreadLocal,20);
+        HttpBenchMarkFutureTask httpBenchMarkFutureTask = new HttpBenchMarkFutureTask(httpRequestThreadLocal,2000);
 
         while (count-->0){
 
@@ -73,6 +81,10 @@ public class HttpMulityThreadSubmit {
                 e.printStackTrace();
             }
         }
+
+        Long  end = System.currentTimeMillis();
+
+        System.out.println((end.longValue() - start.longValue())/1000 );
 
 
 
