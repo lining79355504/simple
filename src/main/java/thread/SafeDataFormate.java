@@ -3,6 +3,7 @@ package thread;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -14,8 +15,15 @@ public class SafeDataFormate {
 
     private static final Map<DatePatternEnum, ThreadLocal<DateFormat>> pattern2ThreadLocal ;
 
+    private static final Map<DatePatternEnum, ThreadLocal<List<DateFormat>>> pattern2ThreadLocal2 ;
+
+
+
+
 
     static {
+
+        pattern2ThreadLocal2 = new HashMap<>();
 
         pattern2ThreadLocal = new HashMap<DatePatternEnum, ThreadLocal<DateFormat>>(DatePatternEnum.values().length);
 
