@@ -38,7 +38,14 @@ public class Test {
         ImageIO.write(img, "jpg", new File("./qrCode.jpg"));
 
 
-
+//        for (int i = 0; i < 100000; i++) {
+//            try {
+//                Integer.parseInt(" ");
+//            }catch (Exception e){
+//                e.printStackTrace();
+//
+//            }
+//        }
 
 
 

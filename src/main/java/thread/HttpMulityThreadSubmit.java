@@ -1,8 +1,6 @@
 package thread;
 
 import http.HttpRequest;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,7 +11,7 @@ import java.util.concurrent.*;
  */
 public class HttpMulityThreadSubmit {
 
-    Logger logger = LoggerFactory.getLogger(HttpMulityThreadSubmit.class);
+   // Logger logger = LoggerFactory.getLogger(HttpMulityThreadSubmit.class);
     /*
     *  打开Tomcat Nginx 最大连接配置
     *
