@@ -24,10 +24,12 @@ public class HttpBenchMarkFutureTask implements Callable<String> {
 
             HttpRequest httpRequest = httpRequestThreadLocal.get();
             //String ret = HttpRequest.sendGet("http://localhost/", "");
-            String ret = httpRequest.sendGet("http://localhost:8080/hello", "");
+//            String ret = httpRequest.sendGet("http://localhost:8080/hello", "");
+            String ret = httpRequest.sendGet("http://172.96.218.52/", "");
             System.out.println("concurrent is :" + concurrent);
             System.out.println("concurrent_copy is :" + concurrent_copy);
-            //System.out.println(" i " + Thread.currentThread().getName() + count + ret);
+            System.out.println(Thread.currentThread().getName() + "ret is " + ret);
+//            System.out.println(" i " + Thread.currentThread().getName() + count + ret);
             //System.out.println(" i " + Thread.currentThread().getName() + count );
 
         }

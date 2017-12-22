@@ -30,7 +30,7 @@ public class HttpMulityThreadSubmit {
      * 并发大了redis 出现卡顿 connected_clients连接数减少  instantaneous_ops_per_sec减少  待查原因
     *
     * */
-    private static int count = 100;
+    private static int count = 500;
 
 
     public static void main(String[] args) {
@@ -43,7 +43,7 @@ public class HttpMulityThreadSubmit {
         ConcurrentHashMap taskRetHaspMap = new ConcurrentHashMap<>();
 
         //ExecutorService cacheThreadPool = Executors.newCachedThreadPool();
-        ExecutorService fixedThreadPool = Executors.newFixedThreadPool(100);
+        ExecutorService fixedThreadPool = Executors.newFixedThreadPool(500);
 
        final ThreadLocal<HttpRequest> httpRequestThreadLocal = new ThreadLocal<HttpRequest>(){
             @Override

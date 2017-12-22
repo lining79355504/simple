@@ -24,6 +24,8 @@ public class Test {
     public static void main(String[] args) throws Exception{
 
 
+        System.out.println(b_a.getBytes());
+
         //QrCodeUtils.main();
 
 
@@ -78,5 +80,7 @@ public class Test {
 //        }
 //
 //        System.out.println("a ".trim()+1);
+
+
     }
 }
