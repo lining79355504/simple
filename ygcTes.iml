@@ -68,6 +68,7 @@
     <orderEntry type="library" name="Maven: commons-collections:commons-collections:3.2" level="project" />
     <orderEntry type="library" name="Maven: com.dianping:geoinfo-api:1.3.25" level="project" />
     <orderEntry type="library" name="Maven: com.facebook.swift:swift-annotations:0.16.0-mt-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: com.alibaba:fastjson:1.2.47" level="project" />
     <orderEntry type="library" name="Maven: com.google.code.gson:gson:2.2.4" level="project" />
     <orderEntry type="library" name="Maven: commons-pool:commons-pool:1.6" level="project" />
     <orderEntry type="library" name="Maven: com.google.zxing:core:2.3.0" level="project" />

@@ -1,6 +1,9 @@
 package queue;
 
 
+import com.alibaba.fastjson.JSON;
+
+import java.io.*;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -26,7 +29,13 @@ public class BlockQueue {
         service.execute(producer1);
         service.execute(producer2);
         service.execute(producer3);
+
+        Thread.sleep(5* 2000);
+        writeObjToDick(queue);
+
         service.execute(consumer);
+
+        readObjFromFile("./obj.txt");
 
         // 执行10s
         Thread.sleep(10 * 1000);
@@ -38,6 +47,49 @@ public class BlockQueue {
         // 退出Executor
         service.shutdown();
     }
+
+
+    public static void writeObjToDick(Object obj) {
+
+        //1、找到目标文件
+        File file = new File("./obj.txt");
+        //建立数据的输出流对象
+        FileOutputStream fileOutputStream = null;
+        try {
+            fileOutputStream = new FileOutputStream(file);
+            //建立对象的输出流对象
+            ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutputStream);
+            //把对象写出去
+            objectOutputStream.writeObject(obj);//序列化house的内容 是给JVM看的 一般我们是看不懂的
+            //关闭资源
+            objectOutputStream.close();
+
+        } catch (Exception e) {
+        e.printStackTrace();
+    }
+
+        }
+
+
+
+
+    public static void readObjFromFile(String fileName){
+
+        File file = new File(fileName);
+        try {
+            FileInputStream fileInputStream = new FileInputStream(file);
+            ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
+            BlockingQueue ret = (BlockingQueue) objectInputStream.readObject();
+            System.out.println("read from " + JSON.toJSONString(ret));
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
+
+    }
+
+
+
 }
 
 
