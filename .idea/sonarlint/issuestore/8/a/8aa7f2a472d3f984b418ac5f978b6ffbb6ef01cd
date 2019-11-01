@@ -1,0 +1,14 @@
+
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(†Á¸ÿÿÿÿÿ
+T
+squid:S106%"9Replace this use of System.out or System.err by a logger.(¶¸…ûÿÿÿÿ
+O
+squid:S106("9Replace this use of System.out or System.err by a logger.(Ğéë
+T
+squid:S106,"9Replace this use of System.out or System.err by a logger.(÷´áñúÿÿÿÿ
+T
+squid:S106/"9Replace this use of System.out or System.err by a logger.(í©äŸùÿÿÿÿ
+Bsquid:S1481"&Remove this unused "c" local variable.(¸âŞûÿÿÿÿ
+Qsquid:S1854"5Remove this useless assignment to local variable "c".(¸âŞûÿÿÿÿ
+[squid:UselessImportCheck"2Remove this unused import 'javax.servlet.Servlet'.(‰¾œøÿÿÿÿ

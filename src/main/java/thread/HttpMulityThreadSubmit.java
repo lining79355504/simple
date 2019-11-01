@@ -36,11 +36,11 @@ public class HttpMulityThreadSubmit {
     public static void main(String[] args) {
 
         Long  start = System.currentTimeMillis();
-        List<Future<String>> taskRetList = new ArrayList<>();
+        List<Future<String>> taskRetList = new ArrayList();
 
         BlockingQueue taskRetQueue = new LinkedBlockingQueue();
 
-        ConcurrentHashMap taskRetHaspMap = new ConcurrentHashMap<>();
+        ConcurrentHashMap taskRetHaspMap = new ConcurrentHashMap();
 
         //ExecutorService cacheThreadPool = Executors.newCachedThreadPool();
         ExecutorService fixedThreadPool = Executors.newFixedThreadPool(500);

@@ -23,7 +23,7 @@ public class SafeDataFormate {
 
     static {
 
-        pattern2ThreadLocal2 = new HashMap<>();
+        pattern2ThreadLocal2 = new HashMap();
 
         pattern2ThreadLocal = new HashMap<DatePatternEnum, ThreadLocal<DateFormat>>(DatePatternEnum.values().length);
 

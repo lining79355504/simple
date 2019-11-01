@@ -1,0 +1,13 @@
+
+bsquid:CommentedOutCodeLine;"<This block of commented-out lines of code should be removed.(½îœ’
+Ysquid:S1854"6Remove this useless assignment to local variable "aI".(·›œ×ùÿÿÿÿ8ìðæ­â-
+Tsquid:S11979"8Move the array designator from the variable to the type.(ï—ë¾úÿÿÿÿ
+T
+squid:S106-"9Replace this use of System.out or System.err by a logger.(»Äÿ«ùÿÿÿÿ
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(´Ô‡æþÿÿÿÿ
+Jsquid:S1481"'Remove this unused "aI" local variable.(·›œ×ùÿÿÿÿ8ìðæ­â-
+Hsquid:S11729",Remove this unused method parameter "value".(ï—ë¾úÿÿÿÿ
+Tsquid:S1197"8Move the array designator from the variable to the type.(‚Ž…òøÿÿÿÿ
+Tsquid:S1197"8Move the array designator from the variable to the type.(‘ÎÔâýÿÿÿÿ
+Dsquid:S1481"&Remove this unused "b" local variable.(›ã²£8Ó©ç­â-
+Ssquid:S1854"5Remove this useless assignment to local variable "b".(›ã²£8Ó©ç­â-

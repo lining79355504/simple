@@ -1,4 +1,4 @@
-import com.dianping.mobileossapi.utils.QrCodeUtils;
+
 import javafx.scene.layout.BackgroundImage;
 
 import javax.imageio.ImageIO;
@@ -7,9 +7,6 @@ import java.io.File;
 import java.io.InputStream;
 import java.math.BigDecimal;
 
-import static com.dianping.mobileossapi.utils.QrCodeUtils.createQrImgBuffer;
-import static com.dianping.mobileossapi.utils.QrCodeUtils.drawLogoAndStringToImg;
-import static com.dianping.mobileossapi.utils.QrCodeUtils.drawStringToImg;
 
 /**
  * Created by mortli on 11/15/16.
@@ -33,11 +30,11 @@ public class Test {
         int width = 600;
         int height = 600;
         String s = "日式美甲甲山公园店中（中山公园店）";
-        BufferedImage tmpImg = createQrImgBuffer(url, width, height);
-        InputStream imageStream = Test.class.getResourceAsStream("/shopAvatar.png");
-        BufferedImage img = drawLogoAndStringToImg(tmpImg, width, height, s, "Serif", 30, 2, 1.02 , imageStream);
-        File file2 = new File("./");
-        ImageIO.write(img, "jpg", new File("./qrCode.jpg"));
+//        BufferedImage tmpImg = createQrImgBuffer(url, width, height);
+//        InputStream imageStream = Test.class.getResourceAsStream("/shopAvatar.png");
+//        BufferedImage img = drawLogoAndStringToImg(tmpImg, width, height, s, "Serif", 30, 2, 1.02 , imageStream);
+//        File file2 = new File("./");
+//        ImageIO.write(img, "jpg", new File("./qrCode.jpg"));
 
 
 //        for (int i = 0; i < 100000; i++) {

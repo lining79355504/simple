@@ -14,6 +14,8 @@ public class FindMostShowAbleElement {
 
     public static void main(String[] args) {
 
+        int aI = 6;
+        long b = 7;
 
         int a[] = {1, 2, 2, 2, 2, 6, 2, 5, 34, 56};
 
