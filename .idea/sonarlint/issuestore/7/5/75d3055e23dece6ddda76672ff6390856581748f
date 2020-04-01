@@ -1,0 +1,20 @@
+
+nsquid:CommentedOutCodeLineo"<This block of commented-out lines of code should be removed.(Î™ÜŸúÿÿÿÿ8“ù±ù‘.
+isquid:CommentedOutCodeLine@"<This block of commented-out lines of code should be removed.(ŽëÄÙ8âÅÑä‘.
+jsquid:CommentedOutCodeLine†"<This block of commented-out lines of code should be removed.(´ôÅ8ù™°ù‘.
+[
+squid:S106e"9Replace this use of System.out or System.err by a logger.(©ééîøÿÿÿÿ8°ò¦å‘.
+nsquid:CommentedOutCodeLineD"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ8âÅÑä‘.
+esquid:S2184|"BCast one of the operands of this division operation to a "double".(ùõ€úÿÿÿÿ8³ê‘ú‘.
+osquid:CommentedOutCodeLine’"<This block of commented-out lines of code should be removed.(ùèÖ‰þÿÿÿÿ8Ñ þ÷‘.
+Hsquid:S1481—")Remove this unused "nums" local variable.(Úèà…8Ñ þ÷‘.
+esquid:S1226n"BIntroduce a new variable instead of reusing the parameter "nums2".(Ç¶µüÿÿÿÿ8ÚŒµù‘.
+Wsquid:S1854—"8Remove this useless assignment to local variable "nums".(Úèà…8Ñ þ÷‘.
+wsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¢ð¼Øùÿÿÿÿ
+`squid:S1226m"BIntroduce a new variable instead of reusing the parameter "nums1".(ïáØë8ÚŒµù‘.
+\
+squid:S106„"9Replace this use of System.out or System.err by a logger.(ÇúªÓþÿÿÿÿ8ÿÂ¸ù‘.
+nsquid:CommentedOutCodeLineS"<This block of commented-out lines of code should be removed.(Ã³Þ¼øÿÿÿÿ8é åå‘.
+Isquid:S2185|"&Remove this silly call to "Math.floor"(ùõ€úÿÿÿÿ8³ê‘ú‘.
+jsquid:CommentedOutCodeLineˆ"<This block of commented-out lines of code should be removed.(‚Ýà8ù™°ù‘.
+osquid:CommentedOutCodeLine˜"<This block of commented-out lines of code should be removed.(ì°‡Þÿÿÿÿÿ8Ñ þ÷‘.

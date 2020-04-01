@@ -1,0 +1,7 @@
+
+qsquid:S00116"RRename this field "EXPIRED" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ô‹„8É±œ€’.
+ssquid:S00116"TRename this field "TIME_INFO" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥Ì˜Ñ8‰¤Ã€’.
+{squid:S00116"WRename this field "CURRENT_SIZE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(”†ª•ùÿÿÿÿ8Õíœ€’.
+wsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¢ğ¼Øùÿÿÿÿ
+usquid:S00116"VRename this field "CACHE_VALUE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÀÛá‰8´×»€’.
+qsquid:S00116"SRename this field "MAX_SIZE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(â¢;8É±œ€’.
