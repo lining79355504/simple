@@ -1,19 +1,0 @@
-
-]squid:S2142J"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€
-gsquid:CommentedOutCodeLine-"<This block of commented-out lines of code should be removed.(³á–ýÿÿÿÿ
-?squid:S1148M"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(â¹˜ìÿÿÿÿÿ
-^squid:S1854+"BRemove this useless assignment to local variable "taskRetHaspMap".(§—Ãýÿÿÿÿ
-O
-squid:S106I"9Replace this use of System.out or System.err by a logger.(×‘’
-`squid:S2147N"DCombine this catch with the one at line 74, which has the same body.(†ëˆçùÿÿÿÿ
-bsquid:S40650"FReplace this anonymous class with a call to "ThreadLocal.withInitial".(üµ÷«ûÿÿÿÿ
-`squid:S2147L"DCombine this catch with the one at line 74, which has the same body.(åþŒóùÿÿÿÿ
-\squid:S1854)"@Remove this useless assignment to local variable "taskRetQueue".(ÐÄß­ûÿÿÿÿ
-O
-squid:S106U"9Replace this use of System.out or System.err by a logger.(„±°é
-Osquid:S1481+"3Remove this unused "taskRetHaspMap" local variable.(§—Ãýÿÿÿÿ
-Gsquid:S24403"+Remove this instantiation of "HttpRequest".(ÿ­Ÿ¦üÿÿÿÿ
-?squid:S1148K"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
-?squid:S1148O"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
-Msquid:S1481)"1Remove this unused "taskRetQueue" local variable.(ÐÄß­ûÿÿÿÿ

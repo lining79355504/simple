@@ -1,6 +1,0 @@
-
-]squid:S1118 ":Add a private constructor to hide the implicit public one.(¡©ûÿÿÿÿ8°ÅìéÖ-
-Fsquid:S11480"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8‚âÓ¥â-
-Xsquid:S1191"5Use classes from the Java API instead of Sun classes.(Éãˆ£ùÿÿÿÿ8¬¾â-
-hsquid:CommentedOutCodeLine&"<This block of commented-out lines of code should be removed.(Ñ¾Øt8™–Æâ-
-nsquid:CommentedOutCodeLine)"<This block of commented-out lines of code should be removed.(Ìñüşÿÿÿÿ8í®éÏã-

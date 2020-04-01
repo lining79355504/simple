@@ -1,16 +1,0 @@
-
-O
-squid:S106"9Replace this use of System.out or System.err by a logger.(σ¶¥¤
-T
-squid:S1069"9Replace this use of System.out or System.err by a logger.(Ϊλοωÿÿÿÿ
-5squid:S2119Q"Save and re-use this "Random".(ΈΝΧ
-csquid:S1192"GDefine a constant instead of duplicating this literal "count " 3 times.(Ϊλοωÿÿÿÿ
-T
-squid:S106+"9Replace this use of System.out or System.err by a logger.(άΛ°‹όÿÿÿÿ
-T
-squid:S106"9Replace this use of System.out or System.err by a logger.(Ϊλοωÿÿÿÿ
-rsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Μ³Ηΐ
-O
-squid:S1068"9Replace this use of System.out or System.err by a logger.(ζάκ
-T
-squid:S106,"9Replace this use of System.out or System.err by a logger.(Ϊλοωÿÿÿÿ

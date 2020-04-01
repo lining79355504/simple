@@ -1,12 +1,0 @@
-
-Psquid:S1444"9Make this "public static scheduledThreadPool" field final(Í°ï
-O
-squid:S106$"9Replace this use of System.out or System.err by a logger.(êî©–
-?squid:S1604"(Make this anonymous inner class a lambda(îöõ·
-1squid:S1220""Move this file to a named package.
-"squid:ClassVariableVisibilityCheck"_Make scheduledThreadPool a static final constant or non-public and provide accessors if needed.(Í°ï
-usquid:S1488"YImmediately return this expression instead of assigning it to the temporary variable "t".(È­ŠÌşÿÿÿÿ
-O
-squid:S106"9Replace this use of System.out or System.err by a logger.(ÿ÷ïü
-?squid:S1148""#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
-]squid:S2142!"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€

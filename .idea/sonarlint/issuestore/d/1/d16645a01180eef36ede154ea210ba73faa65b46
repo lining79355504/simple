@@ -1,18 +1,0 @@
-
-Xsquid:S1854"5Remove this useless assignment to local variable "a".(Ğ€¯Ïüÿÿÿÿ8ÊÍˆ.
-nsquid:S00100‘"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(íÔ³8ÃÃ¡Œ.
-T
-squid:S106B"9Replace this use of System.out or System.err by a logger.(€¦Å½ıÿÿÿÿ
-nsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(©¤Óôùÿÿÿÿ8“š°Ìˆ.
-T
-squid:S106D"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
-\
-squid:S106…"9Replace this use of System.out or System.err by a logger.(¦Îà›úÿÿÿÿ8ü Œ.
-Osquid:S1197("8Move the array designator from the variable to the type.(ÌîÀÑ
-ssquid:S00100‰"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ù’î¹øÿÿÿÿ8ˆõ¡Œ.
-nsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Úì˜úÿÿÿÿ8ÊÍˆ.
-V
-squid:S106"9Replace this use of System.out or System.err by a logger.(üÄã8ùÍˆ.
-Isquid:S1481"&Remove this unused "a" local variable.(Ğ€¯Ïüÿÿÿÿ8ÊÍˆ.
-bsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ÉïÌŒ
-esquid:S1226"AIntroduce a new variable instead of reusing the parameter "list".(´²Ÿ®ÿÿÿÿÿ8Áì¡Œ.

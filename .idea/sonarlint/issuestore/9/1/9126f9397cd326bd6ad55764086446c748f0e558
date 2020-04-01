@@ -1,7 +1,0 @@
-
-€"squid:ClassVariableVisibilityCheck"MMake a a static final constant or non-public and provide accessors if needed.(¤¿Æ÷ùÿÿÿÿ
-9squid:S2386"Make this member "protected".(¤¿Æ÷ùÿÿÿÿ
-…squid:S1319"iThe type of the "a" object should be an interface such as "Map" rather than the implementation "HashMap".(¤¿Æ÷ùÿÿÿÿ
-Csquid:S1444"'Make this "public static a" field final(¤¿Æ÷ùÿÿÿÿ
-qsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(³§åB
-csquid:S1192"MDefine a constant instead of duplicating this literal "asadasdasdas" 4 times.(áŒ¬
