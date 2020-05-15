@@ -1,6 +1,12 @@
 package leetCode;
 
+import org.junit.Test;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
@@ -10,6 +16,8 @@ import java.util.stream.IntStream;
  */
 public class Solution {
 
+
+    private static final Logger logger = LoggerFactory.getLogger(Solution.class);
 
     //https://leetcode-cn.com/problems/two-sum/
     /*
@@ -101,6 +109,29 @@ public class Solution {
         System.out.printf(tmp);
         return tmp;
     }
+
+    private int lengthOfLongestSubstring(String s) {
+        int n = s.length();
+        int res = 0;//记录最长子串的长度
+        int end = 0, start = 0;//记录开始和结尾的下标
+        Set<Character> set = new HashSet<>();//使用set容器不重复
+        while (start < n && end < n) {
+            if (set.contains(s.charAt(end))) {//如果窗口右侧的字符已经存在
+                set.remove(s.charAt(start++));//左侧窗口边界向右
+            } else {
+                set.add(s.charAt(end++));//如果窗口中无重复，窗口右侧向右滑动
+                res = Math.max(res, end - start);//同时记录当前最大长度
+            }
+        }
+        logger.info("{}, {} , {} , {}", res, end, start, set);
+        return res;
+    }
+
+    @Test
+    public void lengthOfLongestSubstringTest(){
+        lengthOfLongestSubstring("abdsfsaadds");
+    }
+
 //    [1,2,5,6] [3,4,7,9] [1,2,3,4,5,6,7,9]
 //    [1,2,3,4] [5,6,7,9] [1,2,3,4,5,6,7,9]
 //    [1,5] [2,3,4,6,7,9] [1,2,3,4,5,6,7,9]

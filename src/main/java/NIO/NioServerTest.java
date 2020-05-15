@@ -12,7 +12,10 @@ package NIO;
 import org.jgroups.tests.NioClientTest;
 import org.jgroups.util.Util;
 
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.net.InetSocketAddress;
 import java.nio.ByteBuffer;
 import java.nio.channels.SelectionKey;
@@ -91,6 +94,7 @@ public class NioServerTest {
             if(start.get() == 0)
                 start.compareAndSet(0, System.currentTimeMillis());
             int num=ch.read(buf);
+            socketChannelContent(ch);
             if(num < 0)
                 return false;
             total_bytes_received.addAndGet(num);
@@ -115,6 +119,17 @@ public class NioServerTest {
         return true;
     }
 
+    private void socketChannelContent(SocketChannel ch) throws IOException {
+        InputStream inputStream = ch.socket().getInputStream();
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
+        while (true) {
+            String s = bufferedReader.readLine();
+            System.out.println(s);
+            if (s == null || "".equals(s)) {
+                break;
+            }
+        }
+    }
 
 
     public static void main(String[] args) throws Exception {

@@ -4,6 +4,7 @@ import javax.servlet.Servlet;
 import org.junit.Test;
 
 import java.math.BigDecimal;
+import java.util.ArrayList;
 
 /**
  * Created by mortli on 3/6/17.
@@ -48,6 +49,9 @@ public class ClickWiseOut {
             }
 
             output(num,start+1,end-1);
+
         }
+
+
 
 }

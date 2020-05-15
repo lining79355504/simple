@@ -4,6 +4,7 @@ import org.jgroups.tests.NioServerPerfTest;
 import org.jgroups.util.Util;
 
 import java.io.IOException;
+import java.io.UnsupportedEncodingException;
 import java.net.InetAddress;
 import java.net.InetSocketAddress;
 import java.nio.ByteBuffer;
@@ -73,6 +74,11 @@ public class NioClientTest {
             this.host=host;
             this.direct=direct;
             buf=create(NioServerPerfTest.SIZE, direct);
+            try {
+                buf.put(("i love lz").getBytes("UTF-8"));
+            } catch (UnsupportedEncodingException e) {
+                e.printStackTrace();
+            }
         }
 
         public void run() {
