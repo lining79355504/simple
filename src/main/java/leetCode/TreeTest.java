@@ -147,6 +147,14 @@ public class TreeTest {
             this.value = value;
         }
 
+        @Override
+        public String toString() {
+            return "TreeNode{" +
+                    "value=" + value +
+                    ", left=" + left +
+                    ", right=" + right +
+                    '}';
+        }
     }
 
 
