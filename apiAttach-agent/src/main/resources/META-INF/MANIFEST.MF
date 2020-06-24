@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Agent-Class: asm.TestAgent
+Premain-Class: asm.TestAgent
+Can-Redine-Classes: true
+Can-Retransform-Classes: true
