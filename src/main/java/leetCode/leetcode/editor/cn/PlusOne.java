@@ -27,8 +27,9 @@ public class PlusOne {
     public static void main(String[] args) {
         Solution solution = new PlusOne().new Solution();
 //        int[] parm = {4,3,2,0};
-        int[] parm = {9};
-        solution.plusOne(parm);
+//        int[] parm = {9};
+//        solution.plusOne(parm);
+        solution.reversal(851);
     }
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
@@ -70,6 +71,19 @@ class Solution {
 
         return ret;
     }
+
+    // 851转成158
+    public int reversal(int a){
+
+        int b = 0;
+        while(a>0){
+            int tmp =  a%10;
+            b = b*10 + tmp;
+            a= a/10;
+        }
+        return b;
+    }
+
 }
 //leetcode submit region end(Prohibit modification and deletion)
 
