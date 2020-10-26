@@ -58,17 +58,17 @@
             <version>1.23</version>
         </dependency>
 
-        <dependency>
-            <groupId>com.dianping.mobile</groupId>
-            <artifactId>mobile-oss-ifttt-api</artifactId>
-            <version>0.1.2</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.dianping.mobile</groupId>-->
+<!--            <artifactId>mobile-oss-ifttt-api</artifactId>-->
+<!--            <version>0.1.2</version>-->
+<!--        </dependency>-->
 
-        <dependency>
-            <groupId>com.facebook.swift</groupId>
-            <artifactId>swift-annotations</artifactId>
-            <version>0.16.0-mt-SNAPSHOT</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.facebook.swift</groupId>-->
+<!--            <artifactId>swift-annotations</artifactId>-->
+<!--            <version>0.16.0-mt-SNAPSHOT</version>-->
+<!--        </dependency>-->
 
         <dependency>
             <groupId>com.alibaba</groupId>

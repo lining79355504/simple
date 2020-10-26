@@ -27,3 +27,7 @@ hs_err_pid*
 
 target/generated-sources/
 target/*
+
+*.iml
+apiAttach-agent/apiAttach-agent.iml
+ygcTest.iml
