@@ -1,6 +1,5 @@
 package airthmethic;
 
-import javax.servlet.Servlet;
 import org.junit.Test;
 
 import java.math.BigDecimal;

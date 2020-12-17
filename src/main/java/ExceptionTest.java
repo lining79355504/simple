@@ -1,5 +1,10 @@
+import java.util.Arrays;
+
 /**
- * Created by mortli on 1/10/17.
+ *   Created by mortli on 1/10/17.
+ *
+ * 　finally总是在控制转移语句（break，continue，return等）执行之前执行。
+ *
  */
 public class ExceptionTest {
 
@@ -49,6 +54,17 @@ public class ExceptionTest {
 
             e.printStackTrace();
 
+        }
+
+        while (true) {
+            try {
+                throw new Exception("test");
+            } catch (Exception e) {
+                System.out.println("args = " + Arrays.deepToString(args));
+                break;
+            } finally {
+                System.out.println("finally");
+            }
         }
 
     }
