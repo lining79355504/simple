@@ -1,5 +1,6 @@
 package com.mort.serial;
 
+import java.io.ObjectStreamClass;
 import java.io.Serializable;
 
 /**
@@ -8,7 +9,7 @@ import java.io.Serializable;
 public class Student implements Serializable {
 
 
-    private static final long serialVersionUID = 1L;
+//    private static final long serialVersionUID = 1L;
 
     private String name ;
 
@@ -28,5 +29,14 @@ public class Student implements Serializable {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+
+    // JVM 默认序列化
+    public static void main(String[] args) {
+        //已经有了 serialVersionUID  会返回已有的serialVersionUID
+        ObjectStreamClass c = ObjectStreamClass.lookup(Student.class);
+        long serialID = c.getSerialVersionUID();
+        System.out.println(serialID);
     }
 }

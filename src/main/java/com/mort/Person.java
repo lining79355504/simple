@@ -46,9 +46,14 @@ public class Person implements Externalizable {
 //    }
 
     @Override
+    public void writeExternal(ObjectOutput out) throws IOException {
+
+    }
+
+    @Override
     public void readExternal(ObjectInput in) throws IOException, ClassNotFoundException {
         this.name = in.readUTF();
-        this.no =
+//        this.no =
     }
 }
 

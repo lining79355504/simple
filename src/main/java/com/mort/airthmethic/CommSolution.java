@@ -209,4 +209,48 @@ public class CommSolution {
         return count;
     }
 
+
+    /**
+     * 给定一个字符串 s ，请你找出其中不含有重复字符的 最长子串 的长度。
+     *
+     *  
+     *
+     * 示例 1:
+     *
+     * 输入: s = "abcabcbb"
+     * 输出: 3
+     * 解释: 因为无重复字符的最长子串是 "abc"，所以其长度为 3。
+     *
+     * 来源：力扣（LeetCode）
+     * 链接：https://leetcode-cn.com/problems/longest-substring-without-repeating-characters
+     * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+     * @param s
+     * @return
+     */
+    public int lengthOfLongestSubstring(String s) {
+        int left = 0;
+        int right = 0 ;
+        int result = 0 ;
+        Set<Character> set = new HashSet<>();
+        while(right < s.length()){
+            if(set.contains(s.charAt(right))){
+                set.remove(s.charAt(left));
+                left++;
+            }else{
+                set.add(s.charAt(right));
+                right++;
+            }
+            result = Math.max(set.size(), result);
+        }
+        return result;
+    }
+
+    @Test
+    public void testMaxUnrepeatString() {
+        String s1 = "abcabcbb";
+        lengthOfLongestSubstring(s1);
+        String s2 = " ";
+        lengthOfLongestSubstring(s2);
+    }
+
 }
