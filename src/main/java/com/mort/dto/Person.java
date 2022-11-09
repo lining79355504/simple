@@ -1,6 +1,11 @@
 package com.mort.dto;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * @author mort
@@ -38,5 +43,31 @@ public class Person implements Serializable {
     public void setNo(Integer no) {
         this.no = no;
     }
+
+
+//    public BigDecimal getField(String orderBy) throws NoSuchFieldException, IllegalAccessException {
+//        return new BigDecimal(getClass().getDeclaredField(orderBy).get(this).toString());
+//    }
+
+    public <T extends Comparable<T>> T getField(String orderBy) throws NoSuchFieldException, IllegalAccessException {
+        return (T) getClass().getDeclaredField(orderBy).get(this);
+    }
+
+    public static void main(String[] args) {
+
+        String sortFiled = "no";
+
+        List<Person> data = new ArrayList<>();
+
+        List<Person> sortedListByField = data.stream().sorted(Comparator.comparing(vo -> {
+            try {
+                return vo.getField(sortFiled);
+            } catch (NoSuchFieldException | IllegalAccessException e) {
+                e.printStackTrace();
+            }
+            return BigDecimal.ZERO;
+        })).collect(Collectors.toList());
+    }
+
 }
 
