@@ -57,6 +57,8 @@ public class Person implements Serializable {
 
         String sortFiled = "no";
 
+        Person person = new Person("li", 3);
+
         List<Person> data = new ArrayList<>();
 
         List<Person> sortedListByField = data.stream().sorted(Comparator.comparing(vo -> {

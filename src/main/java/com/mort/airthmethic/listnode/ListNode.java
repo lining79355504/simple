@@ -9,12 +9,18 @@ import java.util.List;
  */
 public class ListNode {
 
-    int val;
-    ListNode next;
+    public int val;
+
+    public ListNode next;
 
     ListNode(int x) {
         val = x;
         next = null;
+    }
+
+    public ListNode(int val, ListNode node) {
+        this.val = val;
+        next = node;
     }
 
     public static ListNode newInstance(int[] arr) {
