@@ -247,10 +247,82 @@ public class CommSolution {
 
     @Test
     public void testMaxUnrepeatString() {
+
+        int[] arr = {1, 2, 3, 4, 5, 6};
+        twoSpiltSearchPos(arr, 6);
+
         String s1 = "abcabcbb";
         lengthOfLongestSubstring(s1);
         String s2 = " ";
         lengthOfLongestSubstring(s2);
+    }
+
+
+    @Test
+    public void lengthOfLongestSubstringTestV2(){
+
+        lengthOfLongestSubstringV2("ohomm");
+    }
+
+    public int lengthOfLongestSubstringV2(String s) {
+
+        int max = 0;
+        Set<Character> tmp = new LinkedHashSet<>();
+        char[] chars = s.toCharArray();
+        for (int i = 0; i < chars.length; i++) {
+
+            if (tmp.contains(chars[i])) {
+                removeEldest(tmp, chars[i]);
+            }
+
+            tmp.add(chars[i]);
+            max = Math.max(tmp.size(), max);
+        }
+
+        return max;
+
+    }
+
+    public void removeEldest(Set<Character> set, Character s) {
+
+        Iterator<Character> iterator = set.iterator();
+        while (iterator.hasNext()) {
+            Character character = iterator.next();
+            iterator.remove();
+            if (character.equals(s)) {
+                return;
+            }
+        }
+    }
+
+
+
+
+    public int twoSpiltSearchPos(int[] arr, int a) {
+
+        int start = 0;
+        int end = arr.length;
+        while (true) {
+            if ((start + end) / 2 + 1 >= arr.length) {
+                return arr.length ;
+            }
+            if (a >= arr[(start + end) / 2] && a <= arr[(start + end) / 2 + 1]) {
+                return (start + end) / 2 + 1;
+            }
+            if (a >= arr[(start + end) / 2] - 1 && a <= arr[(start + end) / 2]) {
+                return (start + end) / 2 ;
+            }
+
+            if (a < arr[(start + end) / 2] - 1) {
+                end = (start + end) / 2 - 2;
+            }
+
+            if (a > arr[(start + end) / 2 + 1]) {
+                start = (start + end) / 2 + 2;
+            }
+
+        }
+
     }
 
 }

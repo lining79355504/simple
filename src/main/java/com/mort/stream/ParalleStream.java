@@ -1,6 +1,8 @@
 package com.mort.stream;
 
 import java.util.*;
+import java.util.function.Function;
+import java.util.stream.Collectors;
 
 /**
  * Created by suoer on 3/31/17.
@@ -88,5 +90,12 @@ public class ParalleStream {
         }
 
         return Arrays.asList(sb.toString().split(" "));
+    }
+
+
+    //  details.stream().map(SearchKeyReportVo::getCost).filter().collect(Collectors.toList())
+    //简化 list 转化 list   SearchKeyReportVo::getCost  作为参数
+    public <T, R> List<R> toList(Collection<T> collection, Function<? super T, ? extends R> mapper){
+        return collection.stream().map(mapper).filter(Objects::nonNull).collect(Collectors.toList());
     }
 }
