@@ -22,7 +22,7 @@ public class MaxFileMd5Utils {
      */
 
     /**
-     * 获取文件的md5值  支持超过Integer.MAX_VALUE大小文件读取
+     * 获取文件的md5值  支持超过Integer.MAX_VALUE大小文件读取  堆外内存读取
      *
      * @param filePath
      * @return
